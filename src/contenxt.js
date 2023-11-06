@@ -6,7 +6,7 @@ const Main=()=>{
     const searchBook=(evt)=>{
         if(evt.key==="Enter")
         {
-            axios.get('https://www.googleapis.com/books/v1/volumes?q='+search+'&key=AIzaSyBPasAv979guuK3JTztaleOTdQfrjfhsvg')
+            axios.get(URL)
             .then(res=>setData(res.data.items))
             .catch(err=>console.log(err))
         }
@@ -37,7 +37,7 @@ export default Main;
 */
 import React, {useState, useContext, useEffect} from 'react';
 import { useCallback } from 'react';
-const URL = "https://www.googleapis.com/books/v1/volumes?q= '+search+'&key=AIzaSyBPasAv979guuK3JTztaleOTdQfrjfhsvg";
+const URL = "Google API URl";
 const AppContext = React.createContext();
 
 const AppProvider = ({children}) => {
