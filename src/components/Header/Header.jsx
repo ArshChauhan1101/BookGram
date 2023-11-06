@@ -3,7 +3,8 @@ import Navbar from "../Navbar/Navbar";
 import SearchForm from "../SearchForm/SearchForm";
 import "./Header.css";
 
-const Header = () => {
+const Header = () =>
+ {
   return (
     <div className='holder'>
         <header className='header'>
